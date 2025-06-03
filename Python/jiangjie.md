@@ -159,7 +159,7 @@ graph TD
 - 树​​：文件系统组织
 - 图​​：社交网络关系
 
-## 4. 时间/空间复杂度分析
+### 4. 时间/空间复杂度分析
 评估算法效率的方法：
 - 时间复杂度​​：算法运行时间随输入规模增长的变化
 - 空间复杂度​​：算法运行所需内存空间的变化
@@ -288,3 +288,69 @@ def coin_change(coins, amount):
 # 用最少硬币组成86分
 coins = [1, 5, 10, 25]
 print(coin_change(coins, 86))  # [25, 25, 25, 10, 1]
+```
+
+# Git/GitHub 版本控制
+## 1. 版本控制基础
+什么是版本控制？记录文件变化的历史记录系统
+核心概念：
+- 仓库（Repository）​​：项目的文件夹及其历史记录
+- 提交（Commit）​​：一次版本保存（含描述信息）
+- 分支（Branch）​​：隔离的实验空间
+```mermaid
+%% 链表/树/图 - 使用Mermaid绘制
+graph LR
+    A[开始] --> B[修改文件]
+    B --> C[添加变更到暂存区]
+    C --> D[创建提交]
+    D --> E[推送到远程仓库]
+```
+
+## 2. 分支管理
+在不同分支上进行开发：
+```bash
+# 1. 创建新分支
+git branch new-feature
+
+# 2. 切换到该分支
+git checkout new-feature
+
+# 3. 在新分支上进行开发修改...
+git add .
+git commit -m "添加新功能"
+
+# 4. 完成后合并到主分支
+git checkout main
+git merge new-feature
+
+# 5. 推送到远程仓库
+git push origin main
+```
+## 3. 合并请求工作流（Pull Request）
+团队协作的标准流程：
+```mermaid
+%% 链表/树/图 - 使用Mermaid绘制
+sequenceDiagram
+    participant A as 开发者
+    participant B as GitHub
+    participant C as 团队领导
+    
+    A->>B: 1. 推送特性分支
+    A->>B: 2. 创建Pull Request
+    C->>B: 3. 审查代码
+    C->>B: 4. 批准请求
+    B->>B: 5. 自动合并代码
+```
+## 4. 代码协作最佳实践
+1.​​每日提交​​：小步前进，多次提交  
+2.​​清晰的提交信息​​：
+```bash
+# 差的信息: "修复问题"
+# 好的信息: "修复登录页面验证码不显示的问题"
+```
+​​3.分支命名规范​​：
+- feature/user-authentication（新功能）
+- fix/button-alignment（修复问题）  
+
+4.使用.gitignore文件排除不需要跟踪的文件    
+5.定期git pull拉取他人更改，减少冲突

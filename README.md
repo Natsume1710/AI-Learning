@@ -1,11 +1,11 @@
-# 🚀 AI Learning Hub - 从零开始的 AI 方向学习生活
+# 🚀 AI-Learning - 从零开始的 AI 方向学习生活
 
 > **结构化 | 持续更新 | 自驱学习**  
 > 为所有对 AI 知识感兴趣的学习者提供的 AI/ML/DL 系统学习指南，包含精选资源、代码示例和实践路径
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
-[![GitHub Stars](https://img.shields.io/github/stars/yourusername/ai-learning-hub?style=social)](https://github.com/yourusername/ai-learning-hub)
+[![GitHub Stars](https://img.shields.io/github/stars/Natsume1710/AI-Learning?style=social)](https://github.com/yourusername/ai-learning-hub)
 
 ## 🌟 项目亮点
 
